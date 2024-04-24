@@ -4,9 +4,10 @@ import React, { useState, useEffect } from 'react';
 const Table = () => {
   const [data, setData] = useState([]);
 
+  let intervalId;
   useEffect(() => {
     fetchData();
-    const intervalId = setInterval(fetchData, 15000);
+     intervalId = setInterval(fetchData, 10000);
     return () => clearInterval(intervalId);
   }, []);
 
@@ -18,6 +19,7 @@ const Table = () => {
       setData(jsonData);
     } catch (error) {
       console.error('Error fetching data:', error);
+      clearInterval(intervalId);
     }
   };
 

@@ -4,7 +4,6 @@ import { Model, Document } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { Book } from './book.model';
 import { HttpService } from '@nestjs/axios';
-import { resolve } from 'path';
 
 @Injectable()
 export class AppService {
