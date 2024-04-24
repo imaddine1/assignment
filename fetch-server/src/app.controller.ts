@@ -21,14 +21,14 @@ export class AppController {
 
   }
 
-  @Post("synchronize")
-  async synchronizeWithApi(@Body() data){
-    try{
-      await this.appService.synchronizeWithApi(data);
-      return data;
-    }catch(error){
-      console.log("error happen in synchronizing data from api to database");
-    }
-  }
+  // @Post("synchronize")
+  // async synchronizeWithApi(@Body() data){
+  //   try{
+  //     await this.appService.synchronizeWithApi(data);
+  //     return data;
+  //   }catch(error){
+  //     console.log("error happen in synchronizing data from api to database");
+  //   }
+  // }
 
 }

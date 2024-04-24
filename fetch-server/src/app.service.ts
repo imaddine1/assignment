@@ -16,7 +16,7 @@ export class AppService {
 
   async createBooks(){
     try{
-      const response = await this.httpService.axiosRef.get("http://localhost:3000/mock-api");
+      const response = await this.httpService.axiosRef.get("http://localhost:3004/mock-api");
       const arrayObj = response.data;      
      
       await this.bookModel.deleteMany({});
@@ -30,18 +30,18 @@ export class AppService {
 
   }
 
-  async synchronizeWithApi(data){
-    try{
+  // async synchronizeWithApi(data){
+  //   try{
 
-      console.log("the data what we want to update", data);
-      await this.bookModel.deleteMany({});
-      await this.bookModel.insertMany(data);
-      return 
+  //     console.log("the data what we want to update", data);
+  //     await this.bookModel.deleteMany({});
+  //     await this.bookModel.insertMany(data);
+  //     return 
     
-    }catch(error){
-      console.log("error happen inside service, when we synchronize");
+  //   }catch(error){
+  //     console.log("error happen inside service, when we synchronize");
       
-    }
-  }
+  //   }
+  // }
 }
 
