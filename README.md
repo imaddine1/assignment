@@ -24,7 +24,7 @@
 
 <h1> the approach that i came up with </h1>
 
---- image here ---
+<img src="https://github.com/imaddine1/assignment/blob/main/idea.png">
 
 
 <p>The first part I completed involved asking myself how the servers would communicate. At regular intervals, I brainstormed ideas for implementation. As of now, this is my latest and most refined idea for implementation</p>
@@ -37,7 +37,7 @@
 <h3>what should  be in real project</h3>
 <p> env to strore credentials sercret </p>
 <p> don't publish server with dev  mode </p>
-<p> Use docker for containerization your app</p>
+<p> Use docker for containerize your app</p>
 
 
 
